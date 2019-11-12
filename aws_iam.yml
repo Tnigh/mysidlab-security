@@ -7,7 +7,7 @@
     sidpasswd: "{{ password }}"
   gather_facts: False
   tasks:
-  - name: Statefully manage IAM groups
+    - name: Statefully manage IAM groups
       iam:
         iam_type: group
         name: "{{ item }}"
